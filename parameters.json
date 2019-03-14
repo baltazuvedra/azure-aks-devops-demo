@@ -1,0 +1,22 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "spClientId": {
+        "value": "a1ef64a9-a1d5-43a1-b5e2-958a248e502a"
+      },
+      "spClientSecret": {		
+        "value": "6d7f56bc-2887-497d-8ab0-38da2bcb7380"
+      },
+      "linuxAdminUsername": {
+        "value": "Student"
+      },
+      "linuxAdminPassword": {		
+        "value": "Pa55w.rd1234"
+      },
+      "linuxSSHPublicKey": {		
+        "value": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3SEhZ/sIhJ3f5N9zpSY/ChCVRP1C5nFHC4BoiViLc5ghDOldFU6bXnuQdUOKECSad1e1mvSvvar99Yp8aqMz1VPJl9JhasANucFwVFo1Ptwmlp4Yaa9yN/fpvn6Kt2y5MP/W5wYGFixmPxswiKhY+CosomzNWRy7ccgepQnBdFNQkARylLoM6qzJuKx56u7vLfj1EcKfiA3WSTH3/qIQTwAvsgXwfffl1O8dHwPrg1xYXiy5yLav2qDuAXhaRTXsPXU6y0Mlx4OJwXI2fDNVMpA9VDrzjPXtF7yvB7KH3G4/+uklMN37r5gOmMme1r+fTuXnQzfWvLGZgMcFfMVUV robertas@PC0026"
+      }
+    }
+  }
+  
