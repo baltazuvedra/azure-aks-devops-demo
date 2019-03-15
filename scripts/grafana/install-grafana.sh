@@ -58,6 +58,7 @@ install_grafana()
     wget "${DOWNLOAD_URL}"
     sudo dpkg -i "grafana_${GRAFANA_VERSION}_amd64.deb"
     systemctl daemon-reload
+    sudo apt-get install -y
 }
 
 start_grafana()
