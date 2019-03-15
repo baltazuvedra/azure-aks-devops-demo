@@ -45,8 +45,8 @@
       "kubernetesVersion": "1.11.8",
       "kubernetesAgentCount": 2,
       "kubernetesAgentVMSize": "Standard_DS2_v2",
-      "gitRepository": "https://github.com/iainfoulds/devops-jenkins-aks",
-      "_artifactsLocation": "https://az301labfiles.blob.core.windows.net/",
+      "gitRepository": "https://github.com/baltazuvedra/azure-aks-devops-demo/",
+      "_artifactsLocation": "https://raw.githubusercontent.com/baltazuvedra/azure-aks-devops-demo/master/",
       "_artifactsLocationSasToken": "",
       "location": "[resourceGroup().location]",
       "virtualNetworkName": "virtual-network",
@@ -108,7 +108,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "[concat(variables('_artifactsLocation'), 'devopsaks/jenkins.json')]",
+            "uri": "[concat(variables('_artifactsLocation'), 'nested/jenkins.json')]",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
@@ -169,7 +169,7 @@
       {
         "apiVersion": "2017-08-31",
         "type": "Microsoft.ContainerService/managedClusters",
-        "location": "eastus",
+        "location": "northeurope",
         "name": "[variables('kubernetesClusterName')]",
         "properties": {
           "kubernetesVersion": "[variables('kubernetesVersion')]",
@@ -211,7 +211,7 @@
         "properties": {
           "mode": "Incremental",
           "templateLink": {
-            "uri": "[concat(variables('_artifactsLocation'), 'devopsaks/grafana.json')]",
+            "uri": "[concat(variables('_artifactsLocation'), 'nested/grafana.json')]",
             "contentVersion": "1.0.0.0"
           },
           "parameters": {
